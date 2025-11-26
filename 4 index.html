@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+<title>Lancer Podcast</title>
+<link rel="stylesheet" type="text/css" href="4 style.css">
+    </head>
+
+    <body>
+        <header id="main-header">  
+<div id="container">
+    <h1>Lancer Podcast</h1>
+</header>
+</div>
+<nav id="navbar">
+ 
+            <div id="container">
+           <ul>
+            <li><a href="file:///C:/Users/Tomek/Desktop/code/.vscode/Lancer%20podcast/index.html#">Newest</a></li>
+             <li><a href="file:///C:/Users/Tomek/Desktop/code/.vscode/Lancer%20podcast/2%20index.html">Talking Games</a></li>
+              <li><a href="file:///C:/Users/Tomek/Desktop/code/.vscode/Lancer%20podcast/3%20index.html#">All</a></li>
+             <li><a href="file:///C:/Users/Tomek/Desktop/code/.vscode/Lancer%20podcast/4%20index.html">Stay Updated</a></li>
+               <li><a href="file:///C:/Users/Tomek/Desktop/code/.vscode/Lancer%20podcast/5%20index.html">Our Team</a></li>
+           </ul>
+            </div>
+ </nav>
+ <nav>
+        <div>
+        <div class="content">
+    <section id="main">
+        <h1>Stay Updated</h1>
+         <button onclick="showForm()" id="subscribeBtn">Subscribe</button>
+         <div id="emailForm" style="display: none; margin-top: 20px; background: rgb(17, 16, 16); padding: 20px; color: gold; position: relative; z-index: 999; ">
+<form id="subscribeForn" action="https://formspree.io/f/xqandpdo" method="POST">
+    <input type="email" name="email" placeholder="Enter Your Email" required>
+    <button type="submit">Submit</button>
+</form>
+
+<p id="formMessage" style="display: none;"></p>
+ </div>
+<script>
+function showForm() {
+    document.getElementById("emailForm").style.display="block";
+    document.getElementById("subscribeBtn").style.display="none"
+}
+document.getElementById("subscribeForm").addEventListener("submit", function(e) {
+    const msg=document.getElementById("formMessage");
+    msg.style.display="block";
+    msg.textContent="sending..."
+    setTimeout( () =>{
+msg.textContent="If that worked, you'll see a confirmtion-check your email.";
+    }, 1200 );
+});
+</script>
+        
+        <p>This is a free subscribtion that will email you when ever we post a new episode so you can stay up to date</p>
+    </section>
+
+    <div class="photo">
+    <section id="secondar-main">
+    </section>
+    </div>
+    </body>
+</html>

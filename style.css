@@ -1,0 +1,95 @@
+#main-header{
+    background-color: black;
+    color: rgb(255, 255, 255);    
+      margin-top: -25px;
+  height: 200px;
+background-repeat: no-repeat;
+background-position: 600px;
+width: 1538px;
+margin-left: -10px;
+display: flex;
+}
+
+#main-header h1 {
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: gold;
+}
+
+.container {
+     width:80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+body {
+    background-color: rgb(17, 16, 16);
+    color: white;
+ 
+}
+
+#navbar {
+    background-color: rgb(0, 0, 0) ;
+    color:rgb(255, 255, 255) ;
+    margin-top: -160px;
+ 
+}
+
+#navbar ul{
+    padding: 20px;
+    list-style: none;
+    margin-right: 600px;
+    gap: 50px;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: dashed;
+padding-right: 30px;
+    font-size: 20px;
+
+}
+#navbar a:active{
+    color: white;
+}
+#navbar a:hover{
+    color: gold;
+}
+
+.content{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.content h2{
+    margin-bottom: 20px;
+}
+.recive-updates {
+    position: fixed;
+    top: 25px;
+left: 1400px;
+border: gold;
+
+}
+.recive-updates:active{
+    color: white;
+    border: gold;
+}
+
+.button{
+    background-color: gray;
+    color: #ffffff;
+    padding: 10px 5px;
+    border:gold ;
+}
+.button:hover{
+    color: gold
+}
+
+
